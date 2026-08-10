@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="brand">
+            <span class="logo">🎓</span>
+            <h2>Campus Life App</h2>
+        </div>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">Tasks</a>
+            <a href="#">Check-In</a>
+        </div>
+
+    </nav>
+
+
+    <header>
+
+        <h1>Campus Life App</h1>
+        <p>Your student life organizer</p>
+
+    </header>
+
+
+    <section class="welcome">
+
+        <h2>Welcome, Student!</h2>
+
+        <p>
+            Manage your campus activities, tasks, and events in one place.
+        </p>
+
+    </section>
+
+
+
+    <main>
+
+
+        <section class="card">
+
+            <h2>Campus Events</h2>
+
+
+            <h3>Create New Event</h3>
+
+
+            <input 
+                type="text" 
+                id="eventName" 
+                placeholder="Event name"
+            >
+
+
+            <input 
+                type="text" 
+                id="eventDate" 
+                placeholder="Event date"
+            >
+
+
+            <input 
+                type="text" 
+                id="eventLocation" 
+                placeholder="Event location"
+            >
+
+
+            <button onclick="addEvent()">
+                Add Event
+            </button>
+
+
+
+            <div id="eventList"></div>
+
+
+
+            <div class="event">
+
+                <h3>Cybersecurity Club Meeting</h3>
+
+                <p>Date: September 10</p>
+
+                <p>Location: Student Center</p>
+
+
+                <button onclick="checkIn('Cybersecurity Club Meeting')">
+                    Check In
+                </button>
+
+            </div>
+
+
+
+            <div class="event">
+
+                <h3>Campus Club Fair</h3>
+
+                <p>Date: September 15</p>
+
+                <p>Location: University Plaza</p>
+
+
+                <button onclick="checkIn('Campus Club Fair')">
+                    Check In
+                </button>
+
+            </div>
+
+
+
+            <div class="event">
+
+                <h3>Career Development Workshop</h3>
+
+                <p>Date: September 20</p>
+
+                <p>Location: Library</p>
+
+
+                <button onclick="checkIn('Career Development Workshop')">
+                    Check In
+                </button>
+
+            </div>
+
+
+            <p id="checkInMessage"></p>
+
+
+        </section>
+
+
+
+
+        <section class="card">
+
+            <h2>Student Tasks</h2>
+
+
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Enter a task"
+            >
+
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+
+            <ul id="taskList"></ul>
+
+
+        </section>
+
+
+
+
+        <section class="card">
+
+            <h2>Student Dashboard</h2>
+
+
+            <p>Name: Adrian</p>
+
+
+            <p id="taskCount">
+                Tasks Created: 0
+            </p>
+
+
+            <p id="activityStatus">
+                Last Activity: None
+            </p>
+
+
+            <h3>Activity History</h3>
+
+
+            <ul id="activityList"></ul>
+
+
+        </section>
+
+
+
+
+        <section class="card">
+
+            <h2>Privacy & Data Protection</h2>
+
+
+            <p>
+                Campus Life App protects student information by only collecting
+                necessary data for campus activities.
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Tasks are stored only for the student experience.
+                </li>
+
+                <li>
+                    Activity check-ins are used to track participation.
+                </li>
+
+                <li>
+                    Student information is not shared without permission.
+                </li>
+
+            </ul>
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer>
+
+        <p>
+            Campus Life App Prototype | Student Productivity & Engagement Platform
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
